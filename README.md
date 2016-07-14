@@ -1,5 +1,11 @@
 # Ng2lala
 
+my tutorial for angular-cli and angular2.
+
+You'll find it at [www.webdave.de](https://www.webdave.de/category/angular-cli/).
+
+----------
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.9.
 
 ## Development server
