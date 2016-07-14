@@ -1,0 +1,48 @@
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+._row {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap:1em;
+}
+
+.item {
+ display: inline-block;
+ padding:  .25rem;
+ width:  100%;
+}
+.img-thumbnail{
+  width: 100%;
+}
+
+.well {
+ position:relative;
+ display: block;
+}
+
+.artist-header{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: #333 1px solid;
+}
+.artist-img{
+  width: 80px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+.artist-albums .well {
+  margin-bottom: 20px;
+  overflow: auto;
+  min-height: 400px;
+}
+.album{
+  text-align: center;
+  background: #333;
+  padding: 10px 20px;
+  border: #666 1px solid;
+}
+.album-thumb{
+  width: 100%;
+}
