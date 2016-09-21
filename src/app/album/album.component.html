@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-4">
         <div *ngIf="album.images.length > 0">
-          <img class="album-thumb" src="{{album.images[0].url}}">
+          <img class="album-thumb" src="{{album.images[1].url}}">
         </div>
         <h4 *ngIf="album.artists.length > 0">
           <span *ngFor="let artist of album.artists">{{artist.name}}</span>
