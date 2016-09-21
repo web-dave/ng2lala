@@ -1,3 +1,3 @@
-export * from './environment';
 export * from './app.component';
-export * from './shared/index';
+export * from './app.module';
+export * from './app.routes';
