@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { SpotifyService, ISpotifyIResult } from '../shared/spotify.service';
+import { SpotifyService, ISpotifyIResult } from '../../shared/spotify.service';
 
 @Component({
   selector: 'app-search',
