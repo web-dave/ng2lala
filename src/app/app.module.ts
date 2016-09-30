@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { appRoutingProviders, routing } from './app.routes';
+import { Ng2lalaRoutingModule } from './app-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
@@ -27,9 +27,9 @@ import { DurationPipe } from './shared/duration.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    Ng2lalaRoutingModule
   ],
-  providers: [ appRoutingProviders, SpotifyService ],
+  providers: [ SpotifyService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
