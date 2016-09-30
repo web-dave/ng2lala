@@ -11,7 +11,6 @@ import { AboutComponent } from './components/about/about.component';
 import { SpotifyService } from './shared';
 import { ArtistComponent } from './components/artist/artist.component';
 import { AlbumComponent } from './components/album/album.component';
-import { DurationPipe } from './shared/duration.pipe';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { DurationPipe } from './shared/duration.pipe';
     SearchComponent,
     AboutComponent,
     ArtistComponent,
-    AlbumComponent,
-    DurationPipe
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
