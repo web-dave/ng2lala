@@ -9,17 +9,13 @@ import { NavComponent } from './components/nav/nav.component';
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { SpotifyService } from './shared';
-import { ArtistComponent } from './components/artist/artist.component';
-import { AlbumComponent } from './components/album/album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     SearchComponent,
-    AboutComponent,
-    ArtistComponent,
-    AlbumComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
