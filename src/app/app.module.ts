@@ -8,7 +8,6 @@ import { Ng2lalaRoutingModule } from './app-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
-import { SpotifyService } from './shared';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,7 @@ import { SpotifyService } from './shared';
     HttpModule,
     Ng2lalaRoutingModule
   ],
-  providers: [ SpotifyService ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

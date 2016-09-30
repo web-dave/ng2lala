@@ -1,24 +1,3 @@
 <h1>
   {{title}}
 </h1>
-<input type="text" placeholder="Search Music..." (keyup)="searchMusic()" [(ngModel)]="searchStr">
-
-<div *ngIf="searchResult">
-  {{searchResult.total}} FOUND
-  <div class="row _row">
-
-    <div *ngFor="let item of searchResult.items" class="item">
-      <div class="well">
-        <h4><a (click)="selectArtist(item.id)" >{{item.name}}</a></h4>
-        <hr>
-          <img *ngIf="item.images.length !== 0" width="150" src="{{item.images[0].url}}" class="img-thumbnail">
-          <img *ngIf="item.images.length === 0" width="150" src="http://placehold.it/350/060606/efefef?text=no+IMG" class="img-thumbnail">
-        <hr>
-        <h5>
-          <span >Genre: </span>
-          <span *ngFor="let genre of item.genres">{{genre}}</span></h5>
-      </div>
-    </div>
-
-  </div>
-</div>
