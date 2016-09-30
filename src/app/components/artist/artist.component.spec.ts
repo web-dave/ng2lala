@@ -5,7 +5,11 @@ import { ArtistComponent } from './artist.component';
 
 describe('Component: Artist', () => {
   it('should create an instance', () => {
-    let component = new ArtistComponent();
+    let a: any;
+    let b: any;
+    let c: any;
+
+    let component = new ArtistComponent(a, b, c);
     expect(component).toBeTruthy();
   });
 });

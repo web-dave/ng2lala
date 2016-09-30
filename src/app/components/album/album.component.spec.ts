@@ -5,7 +5,9 @@ import { AlbumComponent } from './album.component';
 
 describe('Component: Album', () => {
   it('should create an instance', () => {
-    let component = new AlbumComponent();
+    let a: any;
+    let b: any;
+    let component = new AlbumComponent(a, b);
     expect(component).toBeTruthy();
   });
 });

@@ -1,10 +1,10 @@
-import { MigrationProjectPage } from './app.po';
+import { NgLalaPage } from './app.po';
 
 describe('migration-project App', function() {
-  let page: MigrationProjectPage;
+  let page: NgLalaPage;
 
   beforeEach(() => {
-    page = new MigrationProjectPage();
+    page = new NgLalaPage();
   });
 
   it('should display message saying app works', () => {
