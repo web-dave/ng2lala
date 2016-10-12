@@ -1,0 +1,17 @@
+<form novalidate [formGroup]="form">
+	<div formGroupName="name">
+		<input formControlName="first" placeholder="First name">
+		<input formControlName="last" placeholder="Last name">
+	</div>
+	<div formGroupName="address">
+		<label>address</label><br>
+		<input formControlName="street" placeholder="Street">
+		<input formControlName="town" placeholder="Town">
+	</div>
+	<div formGroupName="social">
+		<label>social</label><br>
+		<input formControlName="twitter" placeholder="twitter">
+		<input formControlName="github" placeholder="github">
+	</div>
+</form>
+<pre>Form: {{ form.value | json }}</pre>

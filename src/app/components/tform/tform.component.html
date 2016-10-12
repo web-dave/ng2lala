@@ -1,0 +1,17 @@
+<form novalidate #form="ngForm">
+  <div ngModelGroup="name" #name="ngModelGroup">
+	<input [ngModel]="user.name.first" name="first" placeholder="First name">
+	<input [ngModel]="user.name.last" name="last" placeholder="Last name">
+  </div>
+	<div ngModelGroup="address" #address="ngModelGroup">
+      <label>address</label><br>
+      <input [ngModel]="user.address.street" name="street">
+      <input [ngModel]="user.address.town" name="town">
+	</div>
+	<div ngModelGroup="social" #social="ngModelGroup">
+      <label>social</label><br>
+      <input [ngModel]="user.social.twitter" name="twitter">
+      <input [ngModel]="user.social.github" name="github">
+	</div>
+</form>
+<pre>Form: {{ form.value | json }}</pre>

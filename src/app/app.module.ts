@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -8,10 +8,11 @@ import { Ng2lalaRoutingModule } from './app-routing.module';
 import { NavComponent } from './components/nav/nav.component';
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
-import { SpotifyService } from './shared';
+import { SpotifyService, DurationPipe, UserService } from './shared';
 import { ArtistComponent } from './components/artist/artist.component';
 import { AlbumComponent } from './components/album/album.component';
-import { DurationPipe } from './shared/duration.pipe';
+import { TformComponent } from './components/tform/tform.component';
+import { RformComponent } from './components/rform/rform.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +22,19 @@ import { DurationPipe } from './shared/duration.pipe';
     AboutComponent,
     ArtistComponent,
     AlbumComponent,
-    DurationPipe
+    DurationPipe,
+    TformComponent,
+    RformComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    Ng2lalaRoutingModule
+    Ng2lalaRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [ SpotifyService ],
+  providers: [ SpotifyService, UserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
