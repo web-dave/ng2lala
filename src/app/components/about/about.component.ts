@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  oState: boolean;
   constructor() { }
 
+  handleOState(event) {
+    console.log('event:', event);
+    this.oState = event;
+  }
   ngOnInit() {
   }
 

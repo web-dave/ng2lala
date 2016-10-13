@@ -1,3 +1,9 @@
 <p>
   about works!
 </p>
+<input [(ngModel)]="inputInput">
+<hr>
+<input type="checkbox" [checked]="oState">
+{{oState}}
+<hr>
+<app-inout [myInput]="inputInput"  (myOutput)="handleOState($event)"></app-inout>
