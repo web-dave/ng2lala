@@ -28,7 +28,6 @@ import { RformComponent } from './components/rform/rform.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     Ng2lalaRoutingModule,
     FormsModule,
