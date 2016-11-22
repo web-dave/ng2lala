@@ -1,0 +1,8 @@
+ <div class="item">
+      <div class="well">
+        <img *ngIf="album.images.length !== 0" width="150" src="{{album.images[2].url}}" class="img-thumbnail">
+        <img *ngIf="album.images.length === 0" width="150" src="http://placehold.it/350/060606/efefef?text=no+IMG" class="img-thumbnail">
+        <hr>
+        <h4><a (click)="selectAlbum(album.id)">{{album.name}}</a></h4>
+      </div>
+    </div>

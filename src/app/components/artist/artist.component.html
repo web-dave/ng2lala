@@ -12,15 +12,17 @@
 
 <div *ngIf="albums">
   <div class="row _row">
+    
+    <album-preview *ngFor="let album of albums.items" [album]="album" (onclick)="selectAlbum(album.id)"></album-preview>
 
-    <div *ngFor="let album of albums.items" class="item">
+    <!--<div *ngFor="let album of albums.items" class="item">
       <div class="well">
         <img *ngIf="album.images.length !== 0" width="150" src="{{album.images[2].url}}" class="img-thumbnail">
         <img *ngIf="album.images.length === 0" width="150" src="http://placehold.it/350/060606/efefef?text=no+IMG" class="img-thumbnail">
         <hr>
         <h4><a (click)="selectAlbum(album.id)">{{album.name}}</a></h4>
       </div>
-    </div>
+    </div>-->
 
   </div>
 </div>

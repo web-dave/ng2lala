@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class MigrationProjectPage {
+export class Ng2lalaPage {
   navigateTo() {
     return browser.get('/');
   }
