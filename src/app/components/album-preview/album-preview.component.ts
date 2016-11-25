@@ -10,7 +10,6 @@ export class AlbumPreviewComponent implements OnInit {
 
   @Input()album: IAlbum;
   @Output()onclick = new EventEmitter();
-  
 
   constructor() { }
 
